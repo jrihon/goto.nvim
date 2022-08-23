@@ -1,6 +1,6 @@
 -- All functions from utils_goto.lua are only imported in this local file
 -- This means that utils cannot be utilised outside of this file!
-local utils = require('utils_GoTo')
+local utils = require('goto.utils')
 
 
 -- The only accessible function for this plugin is GoTo()
