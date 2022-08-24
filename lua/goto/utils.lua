@@ -60,9 +60,9 @@ local function escape_regex(str)
   local split_str, final_str = split(str, '-'), ''
   -- iterate over the table
   for _, v in pairs(split_str) do
-    final_str = final_str..v..'\\'
+    final_str = final_str..v..'%-' --apparently this is an escape character in lua?? Instead of the ubiquitous `\` character kek
   end
-  return string.sub(final_str, 1, -2) -- chop off the last escape character kek
+  return string.sub(final_str, 1, -3) -- chop off the last two characters a.k.a `string indexing` kek 
 end
 
 --[[ M.FUNCTIONS]]
