@@ -35,7 +35,7 @@ function GoTo()
   -- If directory contains an init.lua file, open that
   -- If not, open the directory in Nvim-Tree
   local matched_directory = utils.match_directory(t_RequireContents, t_dirs)
-  if utils.is_lua_file(matched_directory) then
+  if utils.is_lua_file(matched_directory) and utils.is_lua_file(matched_directory) ~= nil then
     utils.open_file_in_buffer(matched_directory)
     return
   else print("Not corresponding `.lua` or `init.lua` found! Exiting ...")
