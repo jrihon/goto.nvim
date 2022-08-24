@@ -15,7 +15,7 @@ This plugin will not search the entire `runtimepath` to search for the contents 
 ## Installation
 ### Packer.nvim
 ```lua
-require "jrihon/goto.nvim"
+  use "jrihon/goto.nvim"
 ```
 
 ## Keymap
