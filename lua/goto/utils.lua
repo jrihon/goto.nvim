@@ -87,9 +87,8 @@ end
 -- if the match is successful, it returns the match as a variable
 function M.is_lua_file(fname)
   local match = string.match(fname, ".lua$") --regex magic
-    if match ~= nil then --guarding the returned nil value
-      if match == ".lua" then return true else return false end
-    else return false end
+    if match == nil then return false end                       --guarding the returned nil value
+    if match == ".lua" then return true else return false end   -- if true else false
 end
 
 -- code for if it is a directory : 21
