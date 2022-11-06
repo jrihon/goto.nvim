@@ -15,6 +15,8 @@ Essentially, when `require( )`, a file or directory is called.</br>
 ```lua
 vim.api.nvim_set_keymap('n', '<leader>gt',':lua GoTo()<CR>',{noremap = true})
 ```
+### Dependencies
+Makes use of `kyazdani42/nvim-tree.lua` as a dependency.
 
 ### Nota bene
 Only valid for subdirectories! 
